@@ -4,7 +4,7 @@
 #          self.val = x
 #          self.left = None
 #          self.right = None
-
+#coding=utf-8
 class Solution(object):
     def invertTree(self, root):
         """
@@ -17,6 +17,6 @@ class Solution(object):
             temp=root.left
             root.left=root.right
             root.right=temp
-        self.invertTree(root.left)
+        self.invertTree(root.left)  #注意这里的类方法调用，前面要加self
         self.invertTree(root.right)
         return root
