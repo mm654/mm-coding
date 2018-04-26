@@ -18,8 +18,8 @@ class Solution(object):
                 if nums[i]+nums[j]==target:
                     list1.append(i)
                     list1.append(j)
-                    return list1
                     break
+                    return list1                   
                 j+=1
             i+=1
         return
