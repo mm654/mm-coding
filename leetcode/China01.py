@@ -22,8 +22,7 @@ class Solution(object):
                     return list1                   
                 j+=1
             i+=1
-        return
-                    
+        return                   
             
         
         
